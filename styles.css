@@ -27,6 +27,7 @@ h2{
 
 .logo{
     display: flex;
+    justify-content: space-between;
     gap: 0.5em;
     margin: 0em 1em;
     
