@@ -3,11 +3,17 @@ body {
     font-family: 'Blinker', sans-serif;
 }
 
+main{
+    width: 80%;
+    margin: auto;
+}
+
 h2{
     font-size: 36px;
     text-align: center;
 }
-
+/*mobil*/
+@media only screen and (max-width: 640px){ 
 .Top{
     background-color: rgb(245, 245, 245);
     padding: 1em;
@@ -23,6 +29,29 @@ h2{
     padding: 1em 1.5em;
     border-radius: 1.5em;
     font-size: 16px;
+    margin: auto;
+}
+
+.Button-mob{
+    text-decoration: none;
+    color: white;
+    background-color: #F5841F;
+    padding: 1em 1.5em;
+    border-radius: 1.5em;
+    font-size: 16px;
+}
+
+.Button-pc{
+    display: none;
+}
+
+.img-pc{
+    display: none;
+}
+
+.part__text{
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
@@ -63,17 +92,24 @@ h2{
 .part{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     margin: 1em;
+    flex-direction: column;
 }
 
 .part-vyhody{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     background-color: #F1F8FC;
-   width: 100%;
+    flex-direction: column;
    padding-bottom: 1em;
+}
+
+.part-vyhody > div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .obrazek{
@@ -91,3 +127,168 @@ footer{
     list-style: none;
     padding: 0;
 }
+.navigace__list{
+    display: none;
+}
+
+}
+/*pc*/
+@media only screen and (min-width: 640px){
+
+    .Top{
+        background-color: rgb(245, 245, 245);
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Button{
+        text-decoration: none;
+        color: white;
+        background-color: #F5841F;
+        padding: 1em 1.5em;
+        border-radius: 1.5em;
+        font-size: 16px;
+    }
+
+    .Button-mob{
+        display: none;
+    }
+    
+    .Button-pc{
+        text-decoration: none;
+        color: white;
+        background-color: #F5841F;
+        padding: 1em 1.5em;
+        border-radius: 1.5em;
+        font-size: 16px;
+    }
+
+    .options{
+        display: flex;
+        gap: 3em;
+        align-items: center;
+    }
+    
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5em;
+        margin: 0em 1em;
+        align-items: center;
+        
+    }
+    
+    .logo-footer{
+        display: flex;
+        gap: 0.5em;
+    }
+    
+    .login{
+        display: flex;
+        gap: 0.5em;
+    }
+    
+    .login-text{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .text-orange{
+        color: #F5841F;
+    }
+    
+    .text-center{
+        text-align: center;
+    }
+    
+    .nadpis{
+        text-align: start;
+    }
+    
+    .part{
+        display: flex;
+       margin: 1em;
+       justify-content: center;
+        gap: 3em;
+    }
+    
+    .part-vyhody{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #F1F8FC;
+        flex-direction: column;
+       padding-bottom: 1em;
+    }
+
+    .points{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 2em;
+    }
+
+    .points > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+    
+    .part-vyhody > div{
+        display: flex;
+    }
+    
+    .obrazek{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    footer{
+        background-color: #16213C;
+        padding: 1em;
+        color: #8ECAE6;
+    }
+    
+    .list{
+        list-style: none;
+        padding: 0;
+    }
+
+    .navigace__list{
+    display: flex;
+    gap: 4em;
+    list-style-type: none;
+}
+
+.navigace__list > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    padding: 0.2em;
+}
+
+.reference{
+    gap: 2em;
+    padding: 2em;
+}
+
+.reference__karta{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 1em;
+    background-color: bisque;
+}
+
+.part__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+    
