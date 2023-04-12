@@ -24,6 +24,10 @@ h2{
     font-weight: 600;
 }
 
+.text--bold {
+    font-weight: 700;
+}
+
 
 /*mobil*/
 
@@ -144,6 +148,7 @@ h2{
     display: flex;
     gap: 1em;
     align-items: center;
+    flex-direction: column;
 }
 
 .main_vyhody__item p {
@@ -174,6 +179,11 @@ h2{
 
 .main_pribeh__cta {
     text-align: center;
+}
+
+.main_pribeh__items{
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .main_profily {
@@ -265,6 +275,130 @@ h2{
     padding: 0 2em;
 }
 
+.site_navbar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.site_navbar__text {
+    display: flex;
+    align-items: center;
+}
+
+.site_navbar--dum::before {
+    content: url(../Pictures/domecek.svg);
+    margin-right: 8px;
+}
+
+.site_navbar--tecka::before {
+    content: url(../Pictures/tecka.svg);
+    margin-right: 8px;
+    margin-bottom: 6px;
+}   
+
+.header_main__funkce h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.hfunkce__cta {
+    display: none;
+}
+
+.header__funkce {
+    padding: 0 3em
+}
+
+.hfunkce__nadpis {
+    text-align: start;
+    margin-top: 0;
+}
+
+.header__funkce p {
+    width: 45%;
+}
+
+.main_funkce {
+    padding: 0 3em;
+}
+
+.main_funkce__karticky {
+    padding: 2em 3em;
+    background-color: #E7E7E7;
+    margin: 2em 3em;
+    border-radius: 25px;
+}
+
+.main_funkce__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.main_funkce__item {
+    display: none;
+    padding: 1em;
+    max-width: 304px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.main_funkce__item:hover .fitem__nadpis {
+    color: black;
+}
+
+.main_funkce__item:hover::after {
+    content: url(../Pictures/oranzovaSipka.svg);
+    position: absolute;
+    left: 1.5em;
+    bottom: -25px;
+}
+
+.main_funkce__item--mobile {
+    display: block;
+}
+
+.fitem__nadpis {
+    color: #F5841F;
+    text-align: start;
+    font-size: 1.3em;
+}
+
+.funkce_main__tinfo {
+    padding: 1em 0;
+    padding-bottom: 2em;
+}
+
+.funkce_main__tinfo * {
+    text-align: center;
+}
+
+.finfo__nadpis {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.finfo_text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.finfo__email {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.finfo_phone__cta .button {/*DODĚLAT BUTTON    #############################################################################     */
+     background-color: white;
+     border: solid 4px #F5841F;
+     color: black;
+}
+
 
 
 /*pc*/
@@ -330,6 +464,11 @@ h2{
         height: 30px;
         background-color: gray;
         display: inline-block;
+    }
+
+    .navbar--active a {
+        border-bottom: 3px solid #F5841F;
+        padding-bottom: 5px;
     }
 
     .header_main__hinfo {
@@ -511,6 +650,39 @@ h2{
     .footer_konec {
         border-top: 1px solid #8ECAE6;
         padding: 2em 10em;
+    }
+
+
+    .header_main__funkce {
+        position: relative;
+    }
+
+    .hfunkce__cta {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10em;
+    }
+
+    .header__funkce {
+        padding: 0 8em
+    } 
+
+    .main_funkce__karticky {
+        padding: 6em;
+        margin: 4em;
+    } 
+
+    .main_funkce__item {
+        display: block;
+        
+    }
+
+    .main_funkce__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2em;
+        
     }
     
 
