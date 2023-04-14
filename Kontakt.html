@@ -4,56 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="hamburger-style.css">
-<script src="./hamburger.js"></script>
-<link rel="stylesheet" href="hamburger.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="./hamburger.js"></script>
+    <title>Logoipsum</title>
 </head>
 <body>
-    <header>
-        <div class="Top">
-            <span class="login">
-                <img src="./Pictures/Vector.svg" alt="ikona přihlášení">
-                <a class="login-text" href="přihlášení">přihlášení</a>
-            </span>
-            <a class="Button" href="Zkušební verze">Zkušební verze</a>
+    <header class="site__header">
+        <div class="header_top">
+            <a class="header_top__text" href="#">Přihlášení</a>
+            <p class="header_top__cta"><a class="button" href="#">Zkušební verze</a></p>
         </div>
-        <div class="logo">
-            <img src="./Pictures/Logo5.svg" alt="Logoipsum logo">
-            <div class="">
-            <nav class="navigace">
-                <ul class="navigace__list">
-                    <li><a href="#">Úvod</a></li>
-                    <li><a href="#">Funkce</a></li>
-                    <li><a href="#">Podpora</a></li>
+        <section class="header_main">
+            <nav class="header_main__navbar">
+                <a class="navbar__logo" href="index.html"><img src="./Pictures/HlavniLogoNapis.svg" alt="Logoipsum logo"></a>
+                <div class="hamburger-row">
+                    <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <ul class="navbar__list hamburger-zone">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a class="sipka--dolu" href="funkce.html">Funkce</a></li>
+                    <li><a class="sipka--dolu" href="#">Podpora</a></li>
                     <li><a href="#">Ceník</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li class="navbar--active"><a href="kontakt.html">Kontakt</a></li>
+                    <li class="nlist__cara"></li>
+                    <li class="nlist__cta"><a class="nlist__button" href="#">Zkušební verze</a></li>
                 </ul>
             </nav>
-            <a class="Button" href="#">zkušební verze</a>
+            <div class="header_main__funkce">
+                <h1>Kontakt</h1>
+                <div class="site_navbar">
+                    <p class="site_navbar__text site_navbar--dum">Úvod</p>
+                    <p class="site_navbar__text site_navbar--tecka">Kontakt</p>
+                </div>
             </div>
-            <div class="hamburger-row">
-                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                
-            </div>
-           
+        </section>
+    </header>
+    <main class="main_kontakt">
+        <div class="main_kontakt__mapaLarge">
+            <section class="main_kontakt__udaje">
+                <p class="udaje--telefon">+420 777 666 666</p>
+                <p class="udaje--mail">info@l3web.cz</p>
+                <p class="udaje--adresa">masarykova 1456</p>
+                <p class="udaje--ucet">12345678/8000</p>
+            </section>
         </div>
-        <nav class="hamburger-nav hamburger-zone">
-            <ul class="hamburger-menu">
+        <section class="main_kontakt__form">
+            <p>Kontaktní formulář</p>
+            <form class="kform">
+                <div class="kform__inputs">
+                    <input type="text" placeholder="Jane Cooper">
+                    <input type="text" placeholder="(302) 555-0107">
+                    <input type="email" placeholder="kenzi.lawson@example.com">
+                    <input type="text" placeholder="Chelyabinsk">
+                    <input type="text" placeholder="Welbeck North">
+                    <input type="text" placeholder="45662 | Scioto County">
+                </div>
+                <div class="kform__largeinput">
+                    <textarea placeholder="Vzkaz pro nás..."></textarea>
+                </div>
+            </form>
+            <p class="kform__cta"><input href="#" class="button" type="submit" value="Odeslat"></p>
+        </section>
+        <img src="Pictures/mapa.png" class="main_kontakt__map">
+    </main>
+    <footer>
+        <div class="site__footer">
+            <div class="footer_start">
+                <img src="./Pictures/HlavniLogoNapisModra.svg" alt="Logoipsum logo">
+                <p><b>Pslib.cz s.r.o</b></p>
+                <p>Masarykova 12345</p>
+                <p>460 00 Liberec</p>
+                <p class="footer--telefon">+420 777 666 666</p>
+                <p class="footer--email">info@web.cz</p>
+                <div class="footer_start__ikonky">
+                    <img src="./Pictures/FooterIkonky/youtube.svg" alt="Ikonka youtube loga">
+                    <img src="./Pictures/FooterIkonky/linkedin.svg" alt="Ikonka LinkedIn loga">
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li><h3 class="footer__nadpis">Videotutoriály</h3></li>
+                <li>CSS</li>
+                <li>Animace</li>
+                <li>Stříhání videa</li>
+                <li>Výběr barev</li>
+                <li>Plánování pracovníků a mezd</li>
+                <li>Všechna videa</li>
+            </ul>
+            <ul class="footer__list">
+                <li><h3 class="footer__nadpis">Podpora</h3></li>
+                <li>Přihlášení k účtu</li>
+                <li>Školení</li>
+                <li>FAQ - Časté dotazy</li>
+                <li>Kontakty</li>
+                <li>Videotutoriály</li>
+            </ul>
+            <ul class="footer__list">
+                <li><h3 class="footer__nadpis">Menu</h3></li>
                 <li>Úvod</li>
                 <li>Funkce</li>
                 <li>Podpora</li>
                 <li>Ceník</li>
                 <li>Kontakt</li>
             </ul>
-        </nav>
-    </header>
-</body>
+            </div>
+        <div class="footer_konec">
+            <p>© Copyright 2023 - Pslib.cz s.r.o. | Cookies | Podmínky užití</p>
+            <p>Vyrobilo: B interactive</p>
+        </div>
+    </footer>
