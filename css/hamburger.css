@@ -27,17 +27,7 @@
 .hamburger span:nth-child(3) { bottom: 0px; 
     transition: 0.2s;}
 
-.hamburger-nav {
-    transform: scaleY(0);
-    transition: 0.35s;
-    transform-origin:top;
-    position: absolute;
-    left: 0;
-    right: 0;
-
-}
-
-@media screen and (max-width: 639px) { 
+@media screen and (max-width: 1000px) { 
    
 
     .hamburger.active span:nth-child(1){
@@ -59,23 +49,4 @@
         top: 18px;
     }
 
-    .hamburger-nav.active {
-        transform: scale(1);
-        transition: 0.35s;
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
-
-    .hamburger-menu{
-        text-align: center;
-        background-color: #ffffff;
-        color: white;
-    }
-
-    .hamburger-menu > li{
-        padding: 0.7em;
-        margin-top: 2px;
-        background-color: #F5841F;
-    }
 }
